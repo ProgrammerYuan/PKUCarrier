@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+              android:orientation = "vertical"
+              android:layout_width = "match_parent"
+              android:layout_height = "wrap_content">
+
+    <TextView
+            android:id = "@+id/dialog_datepicker_title"
+            android:layout_width = "match_parent"
+            android:gravity = "center"
+            android:textSize = "18sp"
+            android:padding = "10dp"
+            android:layout_height = "wrap_content"
+            android:text = "选择日期"
+            android:textStyle="bold"
+            android:textColor="@color/black_00"/>
+
+    <ImageView
+            android:layout_width = "match_parent"
+            android:layout_height = "1px"
+            android:src = "@color/grey"
+            android:scaleType = "fitXY" />
+
+    <RelativeLayout
+            android:id = "@+id/dialog_datepicker_container"
+
+            android:layout_width = "match_parent"
+            android:layout_marginTop = "10dp"
+            android:layout_height = "wrap_content"
+            android:layout_gravity = "center_horizontal">
+
+        <LinearLayout
+                android:id = "@+id/dialog_datepicker_tmp1"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding = "1px"
+                android:orientation = "horizontal">
+            <!--android:background = "@color/grey"-->
+            <net.simonvt.numberpicker.NumberPicker
+                    android:id = "@+id/dialog_datepicker_year"
+                    android:layout_width = "wrap_content"
+                    style = "@style/AngelNumberPicker"
+                    android:layout_height = "120dp" />
+
+
+            <net.simonvt.numberpicker.NumberPicker
+                    android:id = "@+id/dialog_datepicker_month"
+                    android:layout_width = "wrap_content"
+                    style = "@style/AngelNumberPicker"
+                    android:layout_height = "120dp" />
+
+            <net.simonvt.numberpicker.NumberPicker
+                    android:id = "@+id/dialog_datepicker_day"
+                    android:layout_width = "wrap_content"
+                    style = "@style/AngelNumberPicker"
+                    android:layout_height = "120dp" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:id = "@+id/dialog_datepicker_tmp2"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:padding = "1px"
+                android:gravity="center_vertical"
+                android:layout_below="@id/dialog_datepicker_tmp1"
+                android:layout_alignLeft="@id/dialog_datepicker_tmp1"
+                android:orientation = "horizontal"
+                android:visibility="gone">
+            <net.simonvt.numberpicker.NumberPicker
+                    android:id = "@+id/dialog_datepicker_hour"
+                    android:layout_width = "wrap_content"
+                    style = "@style/AngelNumberPicker"
+                    android:layout_height = "120dp" />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"/>
+            <net.simonvt.numberpicker.NumberPicker
+                    android:id = "@+id/dialog_datepicker_minute"
+                    android:layout_width = "wrap_content"
+                    style = "@style/AngelNumberPicker"
+                    android:layout_height = "120dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

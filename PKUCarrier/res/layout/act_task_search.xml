@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="vertical"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:background="@color/grey_light">
+	<LinearLayout
+			android:id="@+id/act_chat_text_layout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:minHeight="48dp"
+			android:padding="2dp"
+			android:background="@color/white"
+			android:layout_gravity="center_vertical"
+			android:orientation="horizontal">
+		<EditText
+				android:id="@+id/act_chat_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="8dp"
+				android:layout_marginRight="2dp"
+				android:paddingLeft="4dp"
+				android:paddingRight="4dp"
+				android:minHeight="28dp"
+				android:layout_gravity="center_vertical"
+				android:layout_weight="1"
+				android:imeOptions="actionSend"
+				android:inputType="phone"
+				android:background="@drawable/shape_roundrect_border_main2_4"
+				android:textSize="14sp"
+				android:textColor="@color/black"
+				android:maxLines="4"/>
+
+		<RelativeLayout
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_gravity="center_vertical">
+
+			<com.programmeryuan.PKUCarrier.materialdesign.widgets.ButtonFlat
+					android:id="@+id/act_chat_send"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerInParent="true"
+					android:layout_weight="0"
+					android:text="搜索"
+					android:textColor="@color/main_1"
+					android:textSize="16sp"/>
+		</RelativeLayout>
+
+	</LinearLayout>
+	<ListView
+			android:id="@+id/act_task_search_list"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"/>
+</LinearLayout>

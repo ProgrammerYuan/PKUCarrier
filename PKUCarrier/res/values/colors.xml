@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name = "trans">#00000000</color>
+	<color name = "trans_75">#bF000000</color>
+	<color name = "trans_50">#7F000000</color>
+	<color name = "trans_25">#3F000000</color>
+	<color name = "trans_12">#1F000000</color>
+	<color name = "trans_white_80">#CCFFFFFF</color>
+	<color name = "trans_white_75">#bFFFFFFF</color>
+	<color name = "trans_white_50">#7FFFFFFF</color>
+	<color name = "trans_white_25">#3FFFFFFF</color>
+	<color name = "trans_white_12">#1FFFFFFF</color>
+	<color name = "white">#FFFBFBFB</color>
+	<color name = "white_darker">#dcdcdc</color>
+	<color name = "pink">#f289a2</color>
+	<color name = "red">#f36a62</color>
+	<color name = "orange">#f1914f</color>
+	<color name = "yellow">#e3b342</color>
+	<color name = "green">#00b953</color>
+	<color name = "lightblue">#79c5ce</color>
+	<color name = "blue">#5babeb</color>
+	<color name = "lightpurple">#8cbddc</color>
+	<color name = "purple">#9e8ccb</color>
+	<color name = "dust">#c4ab6f</color>
+	<color name = "khaki_dark">#af7b32</color>
+	<color name = "khaki">#d8b86d</color>
+	<color name = "tag_0">#33cccc</color>
+	<color name = "tag_1">#ffcc00</color>
+	<color name = "tag_2">#33cc99</color>
+	<color name = "tag_3">#ff9933</color>
+	<color name = "tag_4">#99cc99</color>
+	<color name = "tag_5">#cc99ff</color>
+	<color name = "tag_6">#ff9999</color>
+	<color name = "tag_7">#ff99cc</color>
+	<color name = "tag_8">#66ccff</color>
+	<color name = "background_tab_pressed">#6633B5E5</color>
+	<color name = "trans_60">#9A000000</color>
+	<color name = "grey_light">#ffe7e7e7</color>
+	<color name = "grey_hint_light">#cccccc</color>
+	<color name = "grey_hint_75">#757575</color>
+	<color name = "actionbar_title_grey">#757575</color>
+	<color name = "small_square_grey">#757575</color>
+	<color name = "main">#ffee00</color>
+	<color name = "main_pre">#ffee00</color>
+	<color name = "pku_red">#8b0012</color>
+	<color name = "black">#333333</color>
+	<color name = "grey">#9e9e9e</color>
+	<!--<color name = "black">#4c4b4b</color>-->
+	<color name = "indigo">#e7f4f6</color>
+	<color name = "divider_normal">#dfdfdd</color>
+	<color name = "divider_bf">#bfbfbf</color>
+	<color name = "hint">#b3b3b3</color>
+	<color name = "black_33">#333333</color>
+	<color name = "black_40">#404040</color>
+	<color name = "black_66">#666666</color>
+	<color name = "black_75">#757575</color>
+	<color name = "black_99">#999999</color>
+	<color name = "black_00">#000000</color>
+
+	<!-- resources from vitamio-->
+	<color name="darkgray">#404040ff</color>
+	<color name="gray">#ff666666</color>
+	<color name="text_gray2">#ffC3C3C3</color>
+	<color name="magenta">#ff6699ff</color>
+	<color name="cyan">#66ffffff</color>
+	<color name="transparent">#00000000</color>
+	<color name="transparent_black">#ff000000</color>
+	<color name="background_dark">#f0f0f0</color>
+	<color name="camera_bg">#2c2c2c</color>
+	<color name="camera_progress">#2980B9</color>
+	<color name="camera_progress_split">#005084</color>
+	<color name="camera_progress_three">#24ff00</color>
+	<color name="camera_progress_overflow">#1b5d89</color>
+	<color name="camera_theme_selected_bgcolor">#2980B9</color>
+	<color name="camera_bottom_press_bg">#1b1c1f</color>
+	<color name="title_background_color">#fcb840</color>
+	<color name="camera_progress_delete">#f68b2b</color>
+	<color name="translucent_background_80">#CC000000</color>
+	<color name="translucent_background_50">#7f000000</color>
+	<color name="transparent_black_40">#66000000</color>
+	<color name="transparent_black_85">#DA000000</color>
+	<color name="transparent_black_30">#4D000000</color>
+	<color name="publish_at_line">#FF434345</color>
+	<color name="main_bg_color">#e7e7e7</color>
+	<!-- 标题文字 -->
+	<color name="color_23232b">#23232b</color>
+
+	<color name="video_double_back">#1c1b20</color>
+	<!-- 辅助文字 -->
+	<color name="color_919191">#919191</color>
+	<color name = "white_20">#33ffffff</color>
+	<color name = "white_50">#88ffffff</color>
+	<color name = "grey_bg">#232428</color>
+	<color name = "grey_bg_button">#2c2f34</color>
+	<color name = "grey_bg_button_cancel">#393e44</color>
+	<color name = "grey_focus_bg">#3c3c3c</color>
+	<color name = "grey_line">#dfdfdd</color>
+	<color name = "grey_divider">#dbd6d6</color>
+	<color name = "grey_dark">#6b6b6b</color>
+	<color name = "grey_completed">#b3b3b3</color>
+	<color name = "white_dark">#efefef</color>
+	<color name = "grey_live_detail">#232326</color>
+	<color name = "grey_border">#b3b3b3</color>
+	<color name = "grey_lighter">#f1f1f1</color>
+	<color name = "call_btn_bg">#4cc1c9</color>
+	<color name = "danmuku_gold">#e6b422</color>
+	<color name = "danmuku_gold_light">#ffec47</color>
+	<color name = "danmuku_self">#f2ff61</color>
+	<color name = "danmuku_self_border">#544500</color>
+	<color name = "main_1">#33cc99</color>
+	<color name = "main_1_light">#48d1a3</color>
+	<color name = "main_1_dark">#2eb789</color>
+	<color name = "main_2">#33cc99</color>
+	<color name = "icon_to_learn_pink">#ff6699</color>
+	<color name = "gender_female">#ff9999</color>
+	<color name = "gender_male">#6699cc</color>
+	<color name = "history_post_icon">#7adac0</color>
+	<color name = "guide_bg">#d0000000</color>
+	<color name = "guide_popview_bg">#404040</color>
+	<color name = "chat_top_bg">#3ce8b256</color>
+	<color name = "blue_modify">#458bca</color>
+	<color name = "circle_green">#70cda4</color>
+	<color name = "circle_pink">#ff7e7e</color>
+	<color name = "circle_orange">#ff9e47</color>
+	<color name = "circle_weixin">#4cb352</color>
+	<color name = "circle_weixin_moment">#48b791</color>
+	<color name = "circle_qq">#3487c9</color>
+	<color name = "circle_qzone">#f5ab15</color>
+	<color name = "circle_weibo">#e8534c</color>
+	<!--<color name = "complete_button_blue">#7ecfd5</color>-->
+	<color name = "pay">#FFC172</color>
+	<!--<color name = "spe_a">#79dce3</color>-->
+	<color name = "course_pb_back">#ee7626</color>
+	<color name = "course_pb_progress">#ff8839</color>
+	<color name = "spe_b_1">#76e4eb</color>
+	<color name = "spe_b_2">#ffb4b4</color>
+	<color name = "spe_b_3">#ffe2b4</color>
+	<color name = "article_tag">#b3b3b3</color>
+	<color name = "article_tag0">#757575</color>
+	<color name = "article_tag1">#5be294</color>
+	<color name = "article_tag2">#a3a5fc</color>
+	<color name = "article_tag3">#f0bbff</color>
+	<color name = "article_tag4">#ffcc82</color>
+	<color name = "article_tag5">#5be2c1</color>
+	<color name = "article_tag6">#8cd468</color>
+	<color name = "article_tag7">#ff6363</color>
+	<color name = "article_tag8">#74a0f0</color>
+	<color name = "article_tag9">#ffab34</color>
+	<color name = "article_tag10">#44abed</color>
+	<color name = "article_tag11">#c7a3fc</color>
+	<color name = "article_tag12">#23d7c8</color>
+	<color name = "article_tag13">#ffd234</color>
+	<color name = "article_tag14">#ff829f</color>
+	<color name = "article_tag15">#f2c718</color>
+	<color name = "article_tag16">#9ef497</color>
+	<color name = "article_tag17">#23bbd7</color>
+	<color name = "article_tag18">#ff8888</color>
+	<color name = "article_tag19">#ffbbfb</color>
+	<color name = "post_tag_hotest">#ff97a8</color>
+	<color name = "post_tag_latest">#4dd69a</color>
+
+	<color name = "teacher_card_speciality">#ffd43f</color>
+	<color name = "teacher_card_teaching">#87a6ff</color>
+	<color name = "teacher_card_edu">#82dde3</color>
+	<color name = "teacher_card_story">#9696df</color>
+	<color name = "teacher_card_des">#ffb052</color>
+	<color name = "teacher_home_msg">#54c467</color>
+	<color name = "teacher_home_enroll">#83dde3</color>
+
+	<color name = "me_setting">#b3b3b3</color>
+	<color name = "me_status">#7ecef4</color>
+	<color name = "me_online">#4ed77b</color>
+	<color name = "me_fund">#fbb327</color>
+	<color name = "me_course">#73b2ff</color>
+	<color name = "me_upgrade">@color/main_1</color>
+	<color name = "me_info">#a8edf0</color>
+
+	<color name = "setting_password">#8ac998</color>
+	<color name = "setting_update">#458bca</color>
+	<color name = "setting_cache">#7fcef4</color>
+	<color name = "setting_rate">#fbb329</color>
+	<color name = "setting_about">#4dc1c9</color>
+	<color name = "setting_help">#9be9d0</color>
+	<color name = "setting_logout">#ff7f8b</color>
+	<color name = "setting_feedback">#5670b5</color>
+
+
+	<color name = "status_red">#ff5a39</color>
+	<color name = "status_yellow">#ffb54c</color>
+	<color name = "status_green">#478a72</color>
+	<color name = "status_grey">#969696</color>
+
+	<color name = "tag_champion">#ff5f5b</color>
+	<color name = "tag_competition">#ffcf27</color>
+	<color name = "tag_chief">#70ca44</color>
+	<color name = "tag_scholarship">#ffa45b</color>
+	<color name = "tag_ielts">#d46fb6</color>
+	<color name = "tag_toefl">#83dcdf</color>
+	<color name = "tag_problem">#ffb2c6</color>
+
+	<color name = "custom_card_scholarship">#ffcc83</color>
+	<color name = "custom_card_honor">#5ce2c1</color>
+	<color name = "custom_card_certification">#8dd469</color>
+	<color name = "custom_card_organization">#a4a6fc</color>
+	<color name = "custom_card_union">#5ce295</color>
+	<color name = "custom_card_exchange">#f0bbff</color>
+
+	<color name = "speciality_1">#5846c3</color>
+	<color name = "speciality_2">#00479d</color>
+	<color name = "speciality_3">#446422</color>
+
+	<color name = "home_selected">#313131</color>
+	<color name = "home_normal">#434343</color>
+
+
+	<color name = "bar_black">#7f333333</color>
+	<color name = "online_free">#4ECE41</color>
+	<color name = "online_busy">#FF7474</color>
+
+	<color name = "icon_amount_bg">#ffd778</color>
+	<color name = "login">#60d4dd</color>
+	<color name = "text_live_title">#00a36d</color>
+
+	<color name = "topic_1">#ffa8c1</color>
+	<color name = "topic_2">#79ded6</color>
+	<color name = "topic_3">#ffdb9b</color>
+	<color name = "topic_4">#a8e4ae</color>
+	<color name = "topic_5">#ffab9b</color>
+	<color name = "topic_6">#b1abff</color>
+
+	<color name = "meet_1">#33cc99</color>
+	<color name = "meet_2">#ffcc66</color>
+	<color name = "meet_3">#ff9966</color>
+
+	<color name = "recommend_tag_bg">#e4e4e4</color>
+	<color name = "pop_live_btn_bg">#71EEB4</color>
+	<color name = "trans_white_95">#F2FFFFFF</color>
+</resources>

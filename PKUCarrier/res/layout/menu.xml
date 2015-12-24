@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+            android:id="@+id/dialog_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@color/trans"/>
+
+    <LinearLayout
+            android:id="@+id/contentDialog"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:background="@drawable/dialog_background"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:id="@+id/header"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+            <TextView
+                    android:id="@+id/dialog_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+
+                    />
+
+            <TextView
+                    android:id="@+id/dialog_message"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                    android:textSize="14sp"
+                    android:textColor="#000"/>
+        </LinearLayout>
+
+        <ImageView
+                android:id="@+id/header_divider"
+                android:layout_width="match_parent"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:layout_height="1px"
+                android:src="@color/grey_hint_75"
+                android:scaleType="fitXY"/>
+
+        <ListView
+                android:id="@+id/items"
+                android:visibility="visible"
+                android:layout_gravity="center"
+                android:divider="#00000000"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+
+                android:dividerHeight="0px"
+                android:listSelector="#00000000"
+                android:cacheColorHint="#00000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

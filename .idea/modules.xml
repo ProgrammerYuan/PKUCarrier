@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndroidNumberPicker/AndroidNumberPicker.iml" filepath="$PROJECT_DIR$/AndroidNumberPicker/AndroidNumberPicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EdgeEffectOverride/EdgeEffectOverride.iml" filepath="$PROJECT_DIR$/EdgeEffectOverride/EdgeEffectOverride.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PKUCarrier/PKUCarrier.iml" filepath="$PROJECT_DIR$/PKUCarrier/PKUCarrier.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PullToRefresh/PullToRefresh.iml" filepath="$PROJECT_DIR$/PullToRefresh/PullToRefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RoundedImageView/RoundedImageView.iml" filepath="$PROJECT_DIR$/RoundedImageView/RoundedImageView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Shimmer/Shimmer.iml" filepath="$PROJECT_DIR$/Shimmer/Shimmer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SuperToasts/SuperToasts.iml" filepath="$PROJECT_DIR$/SuperToasts/SuperToasts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UniversalImageLoader/UniversalImageLoader.iml" filepath="$PROJECT_DIR$/UniversalImageLoader/UniversalImageLoader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xUtils/xUtils.iml" filepath="$PROJECT_DIR$/xUtils/xUtils.iml" />
+    </modules>
+  </component>
+</project>

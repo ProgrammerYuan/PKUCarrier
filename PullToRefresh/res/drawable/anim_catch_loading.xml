@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:drawable="@drawable/qxcatch_refresh1" android:duration="70"/>
+	<item android:drawable="@drawable/qxcatch_refresh2" android:duration="70"/>
+	<item android:drawable="@drawable/qxcatch_refresh3" android:duration="70"/>
+	<item android:drawable="@drawable/qxcatch_refresh4" android:duration="70"/>
+	<item android:drawable="@drawable/qxcatch_refresh5" android:duration="70"/>
+	<item android:drawable="@drawable/qxcatch_refresh6" android:duration="70"/>
+	<item android:drawable="@drawable/qxcatch_refresh7" android:duration="70"/>
+	<item android:drawable="@drawable/qxcatch_refresh8" android:duration="70"/>
+	<item android:drawable="@drawable/qxcatch_refresh9" android:duration="70"/>
+	<item android:drawable="@drawable/qxcatch_refresh10" android:duration="70"/>
+	<item android:drawable="@drawable/qxcatch_refresh11" android:duration="70"/>
+	<item android:drawable="@drawable/qxcatch_refresh12" android:duration="70"/>
+</animation-list>

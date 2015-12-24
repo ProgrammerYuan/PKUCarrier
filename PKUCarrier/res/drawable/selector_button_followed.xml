@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android = "http://schemas.android.com/apk/res/android">
+
+	<!--<item>-->
+		<!--<shape android:shape="rectangle">-->
+			<!--<corners android:radius="4dp" />-->
+			<!--<solid android:color="@color/trans"/>-->
+			<!--<stroke android:color="@color/main_1" android:width="1px"/>-->
+		<!--</shape>-->
+	<!--</item>-->
+
+	<!--<item android:state_focused="true">-->
+		<!--<layer-list>-->
+			<!--<item>-->
+				<!--<shape android:shape="rectangle">-->
+					<!--<corners android:radius="4dp"/>-->
+					<!--<solid android:color="@color/trans_white_50"/>-->
+					<!--<stroke android:color="@color/main_1" android:width="1px"/>-->
+				<!--</shape>-->
+			<!--</item>-->
+		<!--</layer-list>-->
+	<!--</item>-->
+
+	<!--<item android:state_pressed="true">-->
+		<!--<layer-list>-->
+			<!--<item>-->
+				<!--<shape android:shape="rectangle">-->
+					<!--<corners android:radius="4dp"/>-->
+					<!--<solid android:color="@color/trans_white_50"/>-->
+					<!--<stroke android:color="@color/main_1" android:width="1px"/>-->
+				<!--</shape>-->
+			<!--</item>-->
+		<!--</layer-list>-->
+	<!--</item>-->
+
+	<!--<item android:state_checked="true">-->
+		<!--<layer-list>-->
+			<!--<item>-->
+				<!--<shape android:shape="rectangle">-->
+					<!--<corners android:radius="4dp"/>-->
+					<!--<solid android:color="@color/white"/>-->
+					<!--<stroke android:color="@color/main_1" android:width="1px"/>-->
+				<!--</shape>-->
+			<!--</item>-->
+		<!--</layer-list>-->
+	<!--</item>-->
+
+	<!--<item android:state_pressed = "true">-->
+		<!--<layer-list>-->
+			<!--<item>-->
+				<!--<shape>-->
+					<!--<corners android:radius = "2dp" />-->
+					<!--<solid android:color = "@color/trans_white_50" />-->
+					<!--<stroke android:width = "1px" android:color = "@color/main_1" />-->
+				<!--</shape>-->
+
+			<!--</item>-->
+
+
+		<!--</layer-list>-->
+	<!--</item>-->
+
+	<item android:state_selected="false">
+		<shape>
+			<corners android:radius = "2dp" />
+			<solid android:color = "@color/main_1" />
+			<stroke android:width = "1px" android:color = "@color/main_1" />
+		</shape>
+	</item>
+
+	<item android:state_selected = "true">
+		<shape>
+			<corners android:radius = "2dp" />
+			<solid android:color = "@color/white" />
+			<stroke android:width = "1px" android:color = "@color/main_1" />
+		</shape>
+	</item>
+
+</selector>

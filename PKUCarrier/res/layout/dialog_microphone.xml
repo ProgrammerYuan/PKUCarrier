@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+	android:layout_width = "200dp"
+	android:layout_height = "200dp"
+	android:background = "@drawable/layer_round_corner_big_trans"
+	android:padding = "20dp">
+
+	<LinearLayout
+		android:id = "@+id/dialog_microphone_tmp1"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:layout_centerInParent = "true"
+		android:orientation = "vertical">
+
+		<RelativeLayout
+			android:layout_width = "match_parent"
+			android:layout_height = "wrap_content">
+
+			<ImageView
+				android:id = "@+id/dialog_microphone_icon"
+				android:layout_width = "120dp"
+				android:layout_height = "120dp"
+				android:layout_centerInParent = "true"
+				android:scaleType = "fitXY"
+				android:src = "@drawable/icon_microphone" />
+
+			<!--<com.pheelicks.visualizer.VisualizerView-->
+			<!--android:id = "@+id/dialog_microphone_wave"-->
+			<!--android:layout_width = "match_parent"-->
+			<!--android:layout_height = "80dp"-->
+			<!--android:layout_centerInParent = "true"-->
+			<!--android:visibility="gone" />-->
+			<!--<com.skd.androidrecording.visualizer.VisualizerView-->
+				<!--android:id = "@+id/dialog_microphone_wave"-->
+				<!--android:layout_width = "match_parent"-->
+				<!--android:layout_height = "80dp"-->
+				<!--android:layout_centerInParent = "true"-->
+				<!--android:visibility = "gone" />-->
+		</RelativeLayout>
+
+
+		<TextView
+			android:id = "@+id/dialog_microphone_text"
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:layout_marginTop = "8dp"
+			android:gravity = "center_horizontal"
+			android:text = "手指上滑，取消发送"
+			android:textColor = "@color/white"
+			android:textSize = "16sp" />
+
+	</LinearLayout>
+
+
+</RelativeLayout>

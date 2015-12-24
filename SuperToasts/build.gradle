@@ -1,0 +1,7 @@
+buildscript {
+}
+
+dependencies {
+    compile project(':Shimmer')
+
+}

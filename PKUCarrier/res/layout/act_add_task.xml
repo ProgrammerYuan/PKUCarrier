@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<uk.co.androidalliance.edgeeffectoverride.EdgeEffectScrollView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@color/grey_light">
+	<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/grey_light">
+
+		<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="1px"
+				android:layout_marginTop="16dp"
+				android:scaleType="fitXY"
+				android:src="@color/divider_normal"/>
+
+		<RelativeLayout
+				android:id="@+id/act_create_task_rl_addr"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingLeft="16dp"
+				android:paddingRight="16dp"
+				android:minHeight="48dp"
+				android:background="@color/white">
+
+			<TextView
+					android:id="@+id/left_hint"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_centerVertical="true"
+					android:text="概要地点"
+					android:textColor="@color/black_00"/>
+
+			<EditText
+					android:id="@+id/act_create_task_addr"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_toRightOf="@+id/left_hint"
+					android:layout_marginLeft="16dp"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:gravity="right"
+					android:singleLine="true"
+					android:maxLength="15"
+					android:textColorHint="@color/hint"
+					android:textColor="@color/black"
+					android:textSize="14sp"
+					android:background="@color/white"/>
+
+		</RelativeLayout>
+
+		<ImageView
+				android:id="@+id/act_create_task_addr_divider"
+				android:layout_width="match_parent"
+				android:layout_height="1px"
+				android:scaleType="fitXY"
+				android:src="@color/divider_normal"/>
+
+		<RelativeLayout
+				android:id="@+id/act_create_task_rl_detail_addr"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingLeft="16dp"
+				android:paddingRight="16dp"
+				android:minHeight="48dp"
+				android:background="@color/white">
+
+			<TextView
+					android:id="@+id/left_hint1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_centerVertical="true"
+					android:text="详细地点"
+					android:textColor="@color/black_00"/>
+
+			<EditText
+					android:id="@+id/act_create_task_detail_addr"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_toRightOf="@+id/left_hint1"
+					android:layout_marginLeft="16dp"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:gravity="right"
+					android:singleLine="true"
+					android:maxLength="15"
+					android:textColorHint="@color/hint"
+					android:textColor="@color/black"
+					android:textSize="14sp"
+					android:background="@color/white"/>
+
+		</RelativeLayout>
+
+		<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="1px"
+				android:scaleType="fitXY"
+				android:src="@color/divider_normal"/>
+
+		<RelativeLayout
+				android:id="@+id/act_create_task_rl_pto"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingLeft="16dp"
+				android:paddingRight="16dp"
+				android:minHeight="48dp"
+				android:background="@color/white">
+
+			<TextView
+					android:id="@+id/left_hint2"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_centerVertical="true"
+					android:text="交货地点"
+					android:textColor="@color/black_00"/>
+
+			<EditText
+					android:id="@+id/act_create_task_pto"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_toRightOf="@+id/left_hint2"
+					android:layout_marginLeft="16dp"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:gravity="right"
+					android:singleLine="true"
+					android:maxLength="15"
+					android:textColorHint="@color/hint"
+					android:textColor="@color/black"
+					android:textSize="14sp"
+					android:background="@color/white"/>
+
+		</RelativeLayout>
+
+		<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="1px"
+				android:scaleType="fitXY"
+				android:src="@color/divider_normal"/>
+
+		<RelativeLayout
+				android:id="@+id/act_create_task_rl_code"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingLeft="16dp"
+				android:paddingRight="16dp"
+				android:minHeight="48dp"
+				android:background="@color/white">
+
+			<TextView
+					android:id="@+id/left_hint3"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_centerVertical="true"
+					android:text="取货码"
+					android:textColor="@color/black_00"/>
+
+			<EditText
+					android:id="@+id/act_create_task_code"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_toRightOf="@+id/left_hint3"
+					android:layout_marginLeft="16dp"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:gravity="right"
+					android:singleLine="true"
+					android:maxLength="15"
+					android:textColorHint="@color/hint"
+					android:textColor="@color/black"
+					android:textSize="14sp"
+					android:background="@color/white"/>
+
+		</RelativeLayout>
+
+		<ImageView
+				android:id="@+id/act_create_task_code_divider"
+				android:layout_width="match_parent"
+				android:layout_height="1px"
+
+				android:scaleType="fitXY"
+				android:src="@color/divider_normal"/>
+
+		<RelativeLayout
+				android:id="@+id/act_create_task_rl_give_time"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingLeft="16dp"
+				android:paddingRight="16dp"
+				android:minHeight="48dp"
+				android:background="@color/white">
+
+			<TextView
+					android:id="@+id/left_hint4"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_centerVertical="true"
+					android:text="交货时间"
+					android:textColor="@color/black_00"/>
+
+			<EditText
+					android:id="@+id/act_create_task_give_time"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_toRightOf="@+id/left_hint4"
+					android:layout_marginLeft="16dp"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:editable="false"
+					android:gravity="right|center_vertical"
+					android:singleLine="true"
+					android:textColorHint="@color/hint"
+					android:textColor="@color/black"
+					android:textSize="14sp"
+					android:background="@color/white"/>
+
+		</RelativeLayout>
+
+		<ImageView
+				android:id="@+id/act_create_task_give_time_divider"
+				android:layout_width="match_parent"
+				android:layout_height="1px"
+				android:scaleType="fitXY"
+				android:src="@color/divider_normal"/>
+
+		<TextView
+				android:id="@+id/act_craete_group_chat_des_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="16dp"
+				android:layout_marginLeft="16dp"
+				android:text="备注信息"
+				android:textColor="@color/black_75"/>
+
+		<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="1px"
+				android:layout_marginTop="16dp"
+				android:scaleType="fitXY"
+				android:src="@color/divider_normal"/>
+
+		<EditText
+				android:id="@+id/act_create_task_info"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:minLines="6"
+				android:padding="16dp"
+				android:gravity="top|left"
+				android:textSize="14sp"
+				android:hint="请在这里填写描述快递信息"
+				android:textColor="@color/black_00"
+				android:background="@color/white"/>
+
+		<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="1px"
+				android:scaleType="fitXY"
+				android:src="@color/divider_normal"/>
+
+	</LinearLayout>
+</uk.co.androidalliance.edgeeffectoverride.EdgeEffectScrollView>

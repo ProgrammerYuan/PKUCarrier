@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="match_parent"
+			  android:layout_height="wrap_content"
+			  android:orientation="vertical">
+
+	<TextView
+			android:id="@+id/item_chat_date"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:paddingBottom="5dp"
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp"
+			android:paddingTop="5dp"
+			android:layout_marginTop="10dp"
+			android:text="日期"
+			android:textColor="@color/hint"
+			android:textSize="12sp"/>
+
+	<TextView
+			android:id="@+id/item_chat_notify"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:gravity="center"
+			android:background="@drawable/layer_round_corner_small_trans"
+			android:paddingBottom="5dp"
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp"
+			android:paddingTop="5dp"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:layout_marginTop="10dp"
+			android:textColor="@color/white"
+			android:textSize="12sp"
+			android:visibility="gone"/>
+
+	<RelativeLayout
+			android:id="@+id/item_chat_msg_container"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:background="@color/trans">
+
+		<ImageView
+				android:id="@+id/item_chat_avatar_friend"
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:scaleType="centerCrop"/>
+
+		<LinearLayout
+				android:id="@+id/item_chat_info_friend"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_toLeftOf="@+id/item_chat_avatar_self"
+				android:layout_toRightOf="@+id/item_chat_avatar_friend"
+				android:layout_marginLeft="10dp"
+				android:orientation="horizontal">
+
+			<TextView
+					android:id="@+id/item_chat_info_friend_name"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:textColor="@color/black"/>
+
+			<ImageView
+					android:id="@+id/item_chat_info_friend_identity"
+					android:layout_width="12dp"
+					android:layout_height="12dp"
+					android:layout_marginLeft="4dp"
+					android:src="@drawable/icon_vip"
+					android:visibility="gone"/>
+
+			<TextView
+					android:id="@+id/item_chat_info_friend_info"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:singleLine="true"
+					android:layout_marginLeft="4dp"
+					android:textSize="12sp"
+					android:textColor="@color/hint"/>
+
+		</LinearLayout>
+
+		<RelativeLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_toLeftOf="@+id/item_chat_avatar_self"
+				android:layout_toRightOf="@+id/item_chat_avatar_friend"
+				android:layout_below="@+id/item_chat_info_friend"
+				android:layout_marginTop="2dp"
+				android:gravity="center_vertical">
+
+			<LinearLayout
+					android:id="@+id/item_chat_voice_friend"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:visibility="gone">
+
+				<RelativeLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:background="@drawable/selector_chat_a"
+						android:minHeight="30dp"
+						android:minWidth="100dp"
+						android:paddingBottom="10dp"
+						android:paddingLeft="15dp"
+						android:paddingRight="10dp"
+						android:paddingTop="10dp">
+
+					<ImageView
+							android:id="@+id/item_chat_voice_friend_icon"
+							android:layout_width="20dp"
+							android:layout_height="20dp"
+							android:layout_centerInParent="true"
+							android:scaleType="fitXY"
+							android:src="@drawable/icon_voice_play_left"/>
+
+				</RelativeLayout>
+
+				<TextView
+						android:id="@+id/item_chat_voice_friend_duration"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_vertical"
+						android:layout_marginLeft="5dp"
+						android:layout_weight="0"
+						android:text=""
+						android:textColor="@color/grey"
+						android:textSize="12sp"/>
+
+				<ImageView
+						android:id="@+id/item_chat_voice_friend_reddot"
+						android:layout_width="6dp"
+						android:layout_height="6dp"
+						android:layout_marginLeft="5dp"
+						android:layout_toRightOf="@+id/item_chat_voice_friend_duration"
+						android:background="@drawable/shape_circle_red"
+						android:layout_gravity="center_vertical"/>
+			</LinearLayout>
+
+			<LinearLayout
+					android:id="@+id/item_chat_voice_self"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:orientation="horizontal"
+					android:visibility="visible">
+
+				<ProgressBar
+						android:id="@+id/item_chat_voice_sending"
+						android:layout_width="20dp"
+						android:layout_height="20dp"
+						android:layout_gravity="center_vertical"
+						android:layout_marginRight="5dp"
+						android:indeterminate="true"/>
+
+				<ImageView
+						android:id="@+id/item_chat_voice_resend"
+						android:layout_width="20dp"
+						android:layout_height="20dp"
+						android:layout_gravity="center_vertical"
+						android:layout_marginRight="5dp"
+						android:background="@drawable/selector_circle_red"
+						android:padding="5dp"
+						android:scaleType="fitXY"
+						android:src="@drawable/icon_refresh"
+						android:visibility="gone"/>
+
+				<TextView
+						android:id="@+id/item_chat_voice_self_duration"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_vertical"
+						android:layout_marginRight="5dp"
+						android:layout_weight="0"
+						android:text="d"
+						android:textColor="@color/grey"
+						android:textSize="12sp"/>
+
+				<RelativeLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:background="@drawable/selector_chat_b"
+						android:minHeight="30dp"
+						android:minWidth="100dp"
+						android:paddingBottom="10dp"
+						android:paddingLeft="10dp"
+						android:paddingRight="15dp"
+						android:paddingTop="10dp">
+
+					<ImageView
+							android:id="@+id/item_chat_voice_self_icon"
+							android:layout_width="20dp"
+							android:layout_height="20dp"
+							android:layout_centerInParent="true"
+							android:scaleType="fitXY"
+							android:src="@drawable/icon_voice_play_right"/>
+
+				</RelativeLayout>
+
+
+			</LinearLayout>
+
+			<TextView
+					android:id="@+id/item_chat_content_friend"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/selector_chat_a"
+					android:gravity="center_vertical"
+					android:minHeight="30dp"
+					android:paddingBottom="10dp"
+					android:paddingLeft="20dp"
+					android:paddingRight="15dp"
+					android:paddingTop="10dp"
+					android:text=""
+					android:textColor="@color/black"
+					android:textSize="14sp"
+					android:visibility="gone"/>
+
+			<LinearLayout
+					android:id="@+id/item_chat_content_self_layout"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:orientation="horizontal"
+					android:visibility="gone">
+
+				<ProgressBar
+						android:id="@+id/item_chat_text_sending"
+						android:layout_width="20dp"
+						android:layout_height="20dp"
+						android:layout_gravity="center_vertical"
+						android:layout_marginRight="5dp"
+						android:indeterminate="true"/>
+
+				<ImageView
+						android:id="@+id/item_chat_text_resend"
+						android:layout_width="20dp"
+						android:layout_height="20dp"
+						android:layout_gravity="center_vertical"
+						android:layout_marginRight="5dp"
+						android:background="@drawable/selector_circle_red"
+						android:padding="5dp"
+						android:scaleType="fitXY"
+						android:src="@drawable/icon_refresh"
+						android:visibility="gone"/>
+
+				<TextView
+						android:id="@+id/item_chat_content_self"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+
+						android:background="@drawable/selector_chat_b"
+						android:gravity="center_vertical"
+						android:minHeight="30dp"
+						android:paddingBottom="10dp"
+						android:paddingLeft="15dp"
+						android:paddingRight="20dp"
+						android:paddingTop="10dp"
+						android:text=""
+						android:textColor="@color/black"
+						android:textSize="14sp"/>
+			</LinearLayout>
+
+
+			<!--<ImageView-->
+			<!--android:id = "@+id/item_chat_image_friend"-->
+			<!--android:layout_width = "wrap_content"-->
+			<!--android:layout_height = "wrap_content"-->
+			<!--android:background = "@drawable/selector_chat_a"-->
+			<!--android:maxHeight = "100dp"-->
+			<!--android:minHeight = "30dp"-->
+			<!--android:maxWidth = "100dp"-->
+			<!--android:paddingBottom = "10dp"-->
+			<!--android:paddingLeft = "20dp"-->
+			<!--android:paddingRight = "15dp"-->
+			<!--android:paddingTop = "10dp"-->
+			<!--android:scaleType = "centerCrop"-->
+			<!--android:visibility = "gone" />-->
+
+			<com.programmeryuan.PKUCarrier.utils.MaskImage
+					android:id="@+id/item_chat_image_friend"
+					xmlns:app="http://schemas.android.com/apk/res-auto"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:maxHeight="100dp"
+					android:maxWidth="100dp"
+					android:minHeight="30dp"
+					android:scaleType="centerInside"
+					android:visibility="gone"
+					app:image="@color/trans"
+					app:mask="@drawable/bg_chat_a"/>
+
+			<LinearLayout
+					android:id="@+id/item_chat_image_self_layout"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:orientation="horizontal"
+					android:visibility="gone">
+
+				<ProgressBar
+						android:id="@+id/item_chat_image_sending"
+						android:layout_width="20dp"
+						android:layout_height="20dp"
+						android:layout_gravity="center_vertical"
+						android:layout_marginRight="5dp"
+						android:indeterminate="true"/>
+
+				<ImageView
+						android:id="@+id/item_chat_image_resend"
+						android:layout_width="20dp"
+						android:layout_height="20dp"
+						android:layout_gravity="center_vertical"
+
+						android:layout_marginRight="5dp"
+						android:background="@drawable/selector_circle_red"
+						android:padding="5dp"
+						android:scaleType="fitXY"
+						android:src="@drawable/icon_refresh"
+						android:visibility="gone"/>
+
+				<!--<ImageView-->
+				<!--android:id = "@+id/item_chat_image_self"-->
+
+				<!--android:layout_width = "wrap_content"-->
+				<!--android:layout_height = "wrap_content"-->
+				<!--android:layout_alignParentRight = "true"-->
+				<!--android:background = "@drawable/selector_chat_b"-->
+				<!--android:maxHeight = "100dp"-->
+				<!--android:minHeight = "30dp"-->
+				<!--android:maxWidth = "100dp"-->
+				<!--android:paddingBottom = "10dp"-->
+				<!--android:paddingLeft = "15dp"-->
+				<!--android:paddingRight = "20dp"-->
+				<!--android:paddingTop = "10dp"-->
+				<!--android:scaleType = "centerCrop" />-->
+				<!--<studio.archangel.toolkitv2.widgets.MaskImage xmlns:app = "http://schemas.android.com/apk/res-auto"-->
+				<!--android:id = "@+id/item_chat_image_self"-->
+				<!--android:layout_alignParentRight = "true"-->
+				<!--android:scaleType = "centerCrop"-->
+				<!--android:maxHeight = "100dp"-->
+				<!--android:minHeight = "30dp"-->
+				<!--android:maxWidth = "100dp"-->
+				<!--android:layout_width = "wrap_content"-->
+				<!--android:layout_height = "wrap_content"-->
+				<!--android:background = "@color/trans"-->
+				<!--app:mask = "@drawable/bg_chat_b"-->
+				<!--app:image = "@color/trans"-->
+				<!--android:visibility = "gone" />-->
+				<com.programmeryuan.PKUCarrier.utils.MaskImage
+						android:id="@+id/item_chat_image_self"
+						xmlns:app="http://schemas.android.com/apk/res-auto"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:maxHeight="100dp"
+						android:maxWidth="100dp"
+						android:minHeight="30dp"
+						android:scaleType="centerInside"
+						app:image="@color/trans"
+						app:mask="@drawable/bg_chat_b"/>
+			</LinearLayout>
+
+			<RelativeLayout
+					android:id="@+id/item_chat_share_friend"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/selector_chat_a"
+					android:gravity="center_vertical"
+					android:maxHeight="200dp"
+					android:paddingTop="4dp"
+					android:paddingBottom="4dp"
+					android:paddingRight="4dp"
+					android:paddingLeft="12dp"
+					android:visibility="gone">
+
+				<RelativeLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="4dp"
+						android:background="@drawable/shape_roundrect_white">
+
+					<com.makeramen.RoundedImageView
+							android:id="@+id/item_chat_share_friend_avatar"
+							xmlns:app="http://schemas.android.com/apk/res-auto"
+							android:layout_width="60dp"
+							android:layout_height="60dp"
+							android:layout_centerVertical="true"
+							android:layout_gravity="center_horizontal"
+							android:layout_weight="0"
+							android:scaleType="centerCrop"
+							app:border_color="@color/white"
+							app:border_width="0dp"
+							app:corner_radius="2dp"
+							app:mutate_background="true"/>
+
+					<TextView
+							android:id="@+id/item_chat_share_friend_avatar_name"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_toRightOf="@+id/item_chat_share_friend_avatar"
+							android:layout_alignTop="@+id/item_chat_share_friend_avatar"
+							android:singleLine="true"
+							android:layout_marginLeft="8dp"
+							android:textSize="16sp"
+							android:text=""/>
+
+					<LinearLayout
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignBottom="@+id/item_chat_share_friend_avatar"
+							android:layout_toRightOf="@+id/item_chat_share_friend_avatar"
+							android:paddingLeft="8dp"
+							android:orientation="vertical">
+
+						<TextView
+								android:id="@+id/item_chat_share_friend_avatar_count"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_above="@+id/owner"
+								android:layout_below="@+id/name"
+								android:singleLine="true"
+								android:textSize="13sp"
+								android:textColor="@color/black_99"
+								android:text=""/>
+
+						<TextView
+								android:id="@+id/item_chat_share_friend_avatar_owner"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:singleLine="true"
+								android:textSize="13sp"
+								android:textColor="@color/black_99"
+								android:text=""/>
+
+					</LinearLayout>
+
+				</RelativeLayout>
+
+			</RelativeLayout>
+
+			<LinearLayout
+					android:id="@+id/item_chat_share_self_layout"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:orientation="horizontal"
+					android:visibility="gone">
+
+				<ProgressBar
+						android:id="@+id/item_chat_share_sending"
+						android:layout_width="20dp"
+						android:layout_height="20dp"
+						android:layout_gravity="center_vertical"
+						android:layout_marginRight="5dp"
+						android:indeterminate="true"/>
+
+				<ImageView
+						android:id="@+id/item_chat_share_resend"
+						android:layout_width="20dp"
+						android:layout_height="20dp"
+						android:layout_gravity="center_vertical"
+						android:layout_marginRight="5dp"
+						android:background="@drawable/selector_circle_red"
+						android:padding="5dp"
+						android:scaleType="fitXY"
+						android:src="@drawable/icon_refresh"
+						android:visibility="gone"/>
+
+				<RelativeLayout
+						android:id="@+id/item_chat_share_self"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:background="@drawable/selector_chat_b_white"
+						android:gravity="center_vertical"
+						android:maxHeight="200dp"
+						android:paddingTop="4dp"
+						android:paddingBottom="4dp"
+						android:paddingRight="12dp"
+						android:paddingLeft="4dp">
+
+					<RelativeLayout
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="4dp"
+							android:background="@drawable/shape_roundrect_white">
+
+						<com.makeramen.RoundedImageView
+								android:id="@+id/item_chat_share_self_avatar"
+								xmlns:app="http://schemas.android.com/apk/res-auto"
+								android:layout_width="60dp"
+								android:layout_height="60dp"
+								android:layout_centerVertical="true"
+								android:layout_gravity="center_horizontal"
+								android:scaleType="centerCrop"
+								app:border_color="@color/white"
+								app:border_width="0dp"
+								app:corner_radius="2dp"
+								app:mutate_background="true"/>
+
+						<TextView
+								android:id="@+id/item_chat_share_self_avatar_name"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_toRightOf="@+id/item_chat_share_self_avatar"
+								android:layout_alignTop="@+id/item_chat_share_self_avatar"
+								android:singleLine="true"
+								android:layout_marginLeft="8dp"
+								android:textSize="16sp"
+								android:text="群名称一二三四五六"/>
+
+						<LinearLayout
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_alignBottom="@+id/item_chat_share_self_avatar"
+								android:layout_toRightOf="@+id/item_chat_share_self_avatar"
+								android:paddingLeft="8dp"
+								android:orientation="vertical">
+
+							<TextView
+									android:id="@+id/item_chat_share_self_avatar_count"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:singleLine="true"
+									android:text="群人数：100/200人"/>
+
+							<TextView
+									android:id="@+id/item_chat_share_self_avatar_owner"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:singleLine="true"
+									android:text="群主：哈哈哈"/>
+
+						</LinearLayout>
+
+					</RelativeLayout>
+
+				</RelativeLayout>
+
+			</LinearLayout>
+
+			<RelativeLayout
+					android:id="@+id/item_chat_share_group_event_friend"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/selector_chat_a"
+					android:gravity="center_vertical"
+					android:maxHeight="200dp"
+					android:paddingTop="4dp"
+					android:paddingBottom="4dp"
+					android:paddingRight="12dp"
+					android:paddingLeft="4dp"
+					android:visibility="gone">
+
+				<RelativeLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="4dp"
+						android:background="@drawable/shape_roundrect_white">
+
+					<TextView
+							android:id="@+id/item_chat_share_group_event_friend_name"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:singleLine="true"
+							android:textSize="16sp"
+							android:text="群名称一二三四五六"/>
+
+					<com.makeramen.RoundedImageView
+							android:id="@+id/item_chat_share_group_event_owner_avatar_friend"
+							xmlns:app="http://schemas.android.com/apk/res-auto"
+							android:layout_width="45dp"
+							android:layout_height="45dp"
+							android:layout_centerVertical="true"
+							android:layout_gravity="center_horizontal"
+							android:layout_marginTop="8dp"
+							android:layout_below="@+id/item_chat_share_group_event_friend_name"
+							android:scaleType="centerCrop"
+							app:border_color="@color/white"
+							app:border_width="0dp"
+							app:corner_radius="2dp"
+							app:mutate_background="true"/>
+
+
+					<LinearLayout
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignTop="@+id/item_chat_share_group_event_owner_avatar_friend"
+							android:layout_alignBottom="@+id/item_chat_share_group_event_owner_avatar_friend"
+							android:layout_toRightOf="@+id/item_chat_share_group_event_owner_avatar_friend"
+							android:gravity="center_vertical"
+							android:paddingLeft="8dp"
+							android:orientation="vertical">
+
+						<TextView
+								android:id="@+id/item_chat_share_friend_group_event_date"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:singleLine="true"
+								android:text="群人数：100/200人"/>
+
+						<TextView
+								android:id="@+id/item_chat_share_friend_group_event_des"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:singleLine="true"
+								android:textColor="@color/grey_dark"
+								android:text="群主：哈哈哈"/>
+
+					</LinearLayout>
+
+				</RelativeLayout>
+
+			</RelativeLayout>
+
+			<LinearLayout
+					android:id="@+id/item_chat_share_group_event_self_layout"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:orientation="horizontal"
+					android:visibility="gone">
+
+				<ProgressBar
+						android:id="@+id/item_chat_share_group_event_sending"
+						android:layout_width="20dp"
+						android:layout_height="20dp"
+						android:layout_gravity="center_vertical"
+						android:layout_marginRight="5dp"
+						android:indeterminate="true"/>
+
+				<ImageView
+						android:id="@+id/item_chat_share_group_event_resend"
+						android:layout_width="20dp"
+						android:layout_height="20dp"
+						android:layout_gravity="center_vertical"
+						android:layout_marginRight="5dp"
+						android:background="@drawable/selector_circle_red"
+						android:padding="5dp"
+						android:scaleType="fitXY"
+						android:src="@drawable/icon_refresh"
+						android:visibility="gone"/>
+
+				<RelativeLayout
+						android:id="@+id/item_chat_share_group_event_self"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:background="@drawable/selector_chat_b_white"
+						android:gravity="center_vertical"
+						android:maxHeight="200dp"
+						android:paddingTop="4dp"
+						android:paddingBottom="4dp"
+						android:paddingRight="12dp"
+						android:paddingLeft="4dp">
+
+					<RelativeLayout
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="4dp"
+							android:background="@drawable/shape_roundrect_white">
+
+						<TextView
+								android:id="@+id/item_chat_share_group_event_self_name"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:singleLine="true"
+								android:textSize="16sp"
+								android:text="群名称一二三四五六"/>
+
+						<com.makeramen.RoundedImageView
+								android:id="@+id/item_chat_share_group_event_owner_avatar"
+								xmlns:app="http://schemas.android.com/apk/res-auto"
+								android:layout_width="45dp"
+								android:layout_height="45dp"
+								android:layout_centerVertical="true"
+								android:layout_gravity="center_horizontal"
+								android:layout_marginTop="8dp"
+								android:layout_below="@+id/item_chat_share_group_event_self_name"
+								android:scaleType="centerCrop"
+								app:border_color="@color/white"
+								app:border_width="0dp"
+								app:corner_radius="2dp"
+								app:mutate_background="true"/>
+
+
+						<LinearLayout
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_alignTop="@+id/item_chat_share_group_event_owner_avatar"
+								android:layout_alignBottom="@+id/item_chat_share_group_event_owner_avatar"
+								android:layout_toRightOf="@+id/item_chat_share_group_event_owner_avatar"
+								android:gravity="center_vertical"
+								android:paddingLeft="8dp"
+								android:orientation="vertical">
+
+							<TextView
+									android:id="@+id/item_chat_share_self_group_event_date"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:singleLine="true"
+									android:text="群人数：100/200人"/>
+
+							<TextView
+									android:id="@+id/item_chat_share_self_group_event_des"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:singleLine="true"
+									android:textColor="@color/grey_dark"
+									android:text="群主：哈哈哈"/>
+
+						</LinearLayout>
+
+					</RelativeLayout>
+
+				</RelativeLayout>
+
+			</LinearLayout>
+
+			<RelativeLayout
+					android:id="@+id/item_chat_bestow_friend"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/bg_chat_a"
+					android:gravity="center_vertical"
+					android:maxHeight="200dp"
+					android:paddingTop="4dp"
+					android:paddingBottom="4dp"
+					android:paddingRight="4dp"
+					android:paddingLeft="12dp"
+					android:visibility="gone">
+
+				<RelativeLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="4dp"
+						android:background="@drawable/shape_roundrect_white">
+
+					<com.makeramen.RoundedImageView
+							android:id="@+id/item_chat_bestow_friend_avatar"
+							xmlns:app="http://schemas.android.com/apk/res-auto"
+							android:layout_width="60dp"
+							android:layout_height="60dp"
+							android:layout_centerVertical="true"
+							android:layout_gravity="center_horizontal"
+							android:layout_weight="0"
+							android:scaleType="centerCrop"
+							app:border_color="@color/white"
+							app:border_width="0dp"
+							app:corner_radius="2dp"
+							app:mutate_background="true"/>
+
+					<TextView
+							android:id="@+id/item_chat_bestow_friend_avatar_title"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_toRightOf="@+id/item_chat_bestow_friend_avatar"
+							android:layout_alignTop="@+id/item_chat_bestow_friend_avatar"
+							android:singleLine="true"
+							android:ellipsize="end"
+							android:layout_marginLeft="8dp"
+							android:textSize="16sp"
+							android:text="我打赏了群主10咩"/>
+					<TextView
+							android:id="@+id/item_chat_bestow_friend_note"
+							android:layout_width="150dp"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/item_chat_bestow_friend_avatar_title"
+							android:layout_alignBottom="@+id/item_chat_bestow_friend_avatar"
+							android:layout_toRightOf="@+id/item_chat_bestow_friend_avatar"
+							android:layout_alignLeft="@+id/item_chat_bestow_friend_avatar_title"
+							android:paddingTop="4dp"
+							android:maxLines="2"
+							android:textSize="13sp"
+							android:ellipsize="end"
+							android:text="群主讲得不错，继续努力~"/>
+				</RelativeLayout>
+
+			</RelativeLayout>
+
+			<LinearLayout
+					android:id="@+id/item_chat_bestow_self_layout"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:orientation="horizontal"
+					android:visibility="visible">
+
+				<ProgressBar
+						android:id="@+id/item_chat_bestow_sending"
+						android:layout_width="20dp"
+						android:layout_height="20dp"
+						android:layout_gravity="center_vertical"
+						android:layout_marginRight="5dp"
+						android:indeterminate="true"/>
+
+				<ImageView
+						android:id="@+id/item_chat_bestow_resend"
+						android:layout_width="20dp"
+						android:layout_height="20dp"
+						android:layout_gravity="center_vertical"
+						android:layout_marginRight="5dp"
+						android:background="@drawable/selector_circle_red"
+						android:padding="5dp"
+						android:scaleType="fitXY"
+						android:src="@drawable/icon_refresh"
+						android:visibility="gone"/>
+
+				<RelativeLayout
+						android:id="@+id/item_chat_bestow_self"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:background="@drawable/bg_chat_b_white"
+						android:gravity="center_vertical"
+						android:maxHeight="200dp"
+						android:paddingTop="4dp"
+						android:paddingBottom="4dp"
+						android:paddingRight="12dp"
+						android:paddingLeft="4dp">
+
+					<RelativeLayout
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="4dp"
+							android:background="@drawable/shape_roundrect_white">
+
+						<com.makeramen.RoundedImageView
+								android:id="@+id/item_chat_bestow_self_avatar"
+								xmlns:app="http://schemas.android.com/apk/res-auto"
+								android:layout_width="60dp"
+								android:layout_height="60dp"
+								android:layout_centerVertical="true"
+								android:layout_gravity="center_horizontal"
+								android:scaleType="centerCrop"
+								app:border_color="@color/white"
+								app:border_width="0dp"
+								app:corner_radius="2dp"
+								app:mutate_background="true"/>
+
+						<TextView
+								android:id="@+id/item_chat_bestow_self_avatar_title"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_toRightOf="@+id/item_chat_bestow_self_avatar"
+								android:layout_alignTop="@+id/item_chat_bestow_self_avatar"
+								android:singleLine="true"
+								android:ellipsize="end"
+								android:layout_marginLeft="8dp"
+								android:textSize="16sp"
+								android:text="我打赏了群主"/>
+
+						<TextView
+								android:id="@+id/item_chat_bestow_self_note"
+								android:layout_width="150dp"
+								android:layout_height="wrap_content"
+								android:layout_below="@+id/item_chat_bestow_self_avatar_title"
+								android:layout_alignBottom="@+id/item_chat_bestow_self_avatar"
+								android:layout_alignLeft="@+id/item_chat_bestow_self_avatar_title"
+								android:layout_toRightOf="@+id/item_chat_bestow_self_avatar"
+								android:paddingTop="4dp"
+								android:text="群主讲得不错，继续努力~"
+								android:textSize="13sp"
+								android:ellipsize="end"
+								android:maxLines="2"/>
+
+					</RelativeLayout>
+
+				</RelativeLayout>
+
+			</LinearLayout>
+
+		</RelativeLayout>
+
+		<ImageView
+				android:id="@+id/item_chat_avatar_self"
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:layout_alignParentRight="true"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:scaleType="centerCrop"/>
+
+	</RelativeLayout>
+</LinearLayout>

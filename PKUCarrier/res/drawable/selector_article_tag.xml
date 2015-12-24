@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<selector xmlns:android = "http://schemas.android.com/apk/res/android">-->
+
+<!--<item android:id = "@+id/selector_article_tag_back" android:state_focused = "true">-->        <!--<shape>-->            <!--<solid android:color = "@color/article_tag" />-->            <!--<corners android:bottomLeftRadius = "2dp" android:bottomRightRadius = "2dp" />-->        <!--</shape>-->    <!--</item>-->    <!--<item android:id = "@+id/selector_article_tag_back" android:state_selected = "true">-->        <!--<shape>-->            <!--<solid android:color = "@color/article_tag" />-->            <!--<corners android:bottomLeftRadius = "2dp" android:bottomRightRadius = "2dp" />-->
+
+<!--</shape>-->    <!--</item>-->    <!--<item android:id = "@+id/selector_article_tag_back" android:state_pressed = "true">-->        <!--<shape>-->            <!--<solid android:color = "@color/article_tag" />-->            <!--<corners android:bottomLeftRadius = "2dp" android:bottomRightRadius = "2dp" />-->
+
+<!--</shape>-->    <!--</item>-->
+
+<!--<item android:id = "@+id/selector_article_tag_back">-->        <!--<shape>-->            <!--<solid android:color = "@color/article_tag" />-->            <!--<corners android:bottomLeftRadius = "2dp" android:bottomRightRadius = "2dp" />-->
+
+<!--</shape>-->    <!--</item>-->
+
+<!--</selector>-->
+
+<layer-list xmlns:android = "http://schemas.android.com/apk/res/android">
+
+	<item android:id = "@+id/selector_article_tag_back">
+		<shape>
+			<solid android:color = "@color/article_tag" />
+			<corners
+				android:bottomLeftRadius = "4dp"
+				android:bottomRightRadius = "4dp" />
+
+		</shape>
+	</item>
+
+</layer-list>

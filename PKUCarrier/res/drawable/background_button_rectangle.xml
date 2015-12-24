@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android = "http://schemas.android.com/apk/res/android">
+
+	<!--<item android:drawable="@drawable/background_button">-->
+	<!--</item>-->
+	<!--<item android:id = "@+id/shape_shadow">-->
+		<!--<shape android:shape = "rectangle">-->
+			<!--<corners android:radius="4dp"/>-->
+			<!--&lt;!&ndash;<corners&ndash;&gt;-->
+			<!--&lt;!&ndash;android:topLeftRadius = "2dp"&ndash;&gt;-->
+			<!--&lt;!&ndash;android:topRightRadius = "2dp"&ndash;&gt;-->
+			<!--&lt;!&ndash;android:bottomLeftRadius = "3dp"&ndash;&gt;-->
+			<!--&lt;!&ndash;android:bottomRightRadius = "3dp" />&ndash;&gt;-->
+			<!--&lt;!&ndash;<gradient&ndash;&gt;-->
+				<!--&lt;!&ndash;android:startColor = "#4b9c9c9c"&ndash;&gt;-->
+				<!--&lt;!&ndash;android:endColor = "#80000000"&ndash;&gt;-->
+				<!--&lt;!&ndash;android:angle = "90" />&ndash;&gt;-->
+			<!--&lt;!&ndash;<corners android:radius = "4dp" />&ndash;&gt;-->
+			<!--&lt;!&ndash;<gradient&ndash;&gt;-->
+			<!--&lt;!&ndash;android:centerColor = "#4b9c9c9c"&ndash;&gt;-->
+			<!--&lt;!&ndash;android:endColor = "#80000000"&ndash;&gt;-->
+			<!--&lt;!&ndash;android:gradientRadius = "100"&ndash;&gt;-->
+			<!--&lt;!&ndash;android:startColor = "#c1c1c1"&ndash;&gt;-->
+			<!--&lt;!&ndash;android:type = "radial"></gradient>&ndash;&gt;-->
+			<!--<solid android:color = "@color/trans_half" />-->
+		<!--</shape>-->
+	<!--</item>-->
+	<item
+		android:id = "@+id/shape_bacground"
+		android:right = "1dp"
+		android:left = "1dp"
+		android:bottom = "1dp"
+		android:top = "1dp">
+		<shape android:shape = "rectangle">
+			<corners android:radius = "4dp" />
+
+			<solid android:color = "#FFF" />
+		</shape>
+	</item>
+
+</layer-list>

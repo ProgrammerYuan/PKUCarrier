@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+	android:layout_width = "match_parent"
+	android:layout_height = "wrap_content">
+
+	<LinearLayout
+		android:id = "@+id/dialog_progress_pb_layout"
+		android:layout_width = "match_parent"
+		android:layout_height = "wrap_content"
+		android:layout_marginTop = "80dp"
+		android:layout_marginBottom = "80dp"
+		android:background = "@drawable/dialog_background"
+		android:padding = "32dp"
+		android:orientation = "vertical">
+
+		<com.programmeryuan.PKUCarrier.materialdesign.widgets.ProgressBarDetermininate
+			android:id = "@+id/dialog_progress_pb"
+			android:layout_width = "match_parent"
+			android:layout_height = "wrap_content"
+			android:layout_weight = "0" />
+
+		<TextView
+			android:id = "@+id/dialog_progress_content"
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:layout_weight = "1"
+			android:gravity = "center_vertical"
+			android:layout_marginTop = "8dp"
+			android:text = "正在上传..."
+			android:textColor = "@color/black" />
+	</LinearLayout>
+
+	<com.programmeryuan.PKUCarrier.materialdesign.widgets.ProgressBarCircularIndetermininate
+		android:id = "@+id/dialog_progress_pb_eternal"
+		android:layout_marginTop = "80dp"
+		android:layout_marginBottom = "80dp"
+		android:layout_width = "32dp"
+		android:layout_height = "32dp" />
+</RelativeLayout>

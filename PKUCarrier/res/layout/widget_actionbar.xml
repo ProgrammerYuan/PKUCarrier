@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+	android:layout_width = "match_parent"
+	android:layout_height = "match_parent"
+				android:background="@color/white"
+	android:orientation = "horizontal">
+
+	<TextView
+		android:id = "@+id/widget_actionbar_title"
+		android:layout_width = "wrap_content"
+		android:layout_height = "match_parent"
+		android:layout_centerInParent = "true"
+		android:maxWidth="160dp"
+		android:singleLine="true"
+		android:gravity = "center"
+		android:textSize = "16sp" />
+
+	<com.programmeryuan.PKUCarrier.materialdesign.widgets.LinearLayout
+		android:id = "@+id/widget_actionbar_left_container"
+		android:layout_width = "wrap_content"
+		android:layout_height = "match_parent"
+		android:layout_alignParentLeft = "true"
+		android:layout_toRightOf = "@+id/widget_actionbar_title"
+		android:background = "@color/trans"
+		android:orientation = "horizontal"
+		android:paddingLeft = "8dp"
+		android:paddingRight = "4dp">
+
+		<ImageView
+			android:id = "@+id/widget_actionbar_arrow"
+			android:layout_width = "24dp"
+			android:layout_height = "match_parent"
+			android:layout_marginRight = "4dp"
+			android:gravity = "center"
+			android:scaleType = "centerInside"
+			android:src = "@drawable/icon_actionbar_arrow" />
+
+		<TextView
+			android:id = "@+id/widget_actionbar_left"
+			android:layout_width = "wrap_content"
+			android:layout_height = "match_parent"
+			android:gravity = "center"
+			android:textSize = "18sp" />
+	</com.programmeryuan.PKUCarrier.materialdesign.widgets.LinearLayout>
+
+
+	<com.programmeryuan.PKUCarrier.materialdesign.widgets.ButtonFlat
+		android:id = "@+id/widget_actionbar_right"
+		android:layout_width = "wrap_content"
+		android:layout_height = "match_parent"
+		android:layout_alignParentRight = "true"
+		android:layout_toLeftOf = "@+id/widget_actionbar_title"
+		android:background = "@color/trans"
+		android:gravity = "center"
+		android:minHeight = "24dp"
+		android:minWidth = "24dp"
+		android:text = ""
+		android:textSize = "18sp"
+		android:visibility = "visible" />
+
+	<com.programmeryuan.PKUCarrier.materialdesign.widgets.RelativeLayout
+		android:id = "@+id/widget_actionbar_right_image"
+		android:layout_width = "wrap_content"
+		android:layout_height = "match_parent"
+		android:layout_alignParentRight = "true"
+		android:layout_toLeftOf = "@+id/widget_actionbar_title"
+		android:background = "@color/trans"
+		android:gravity = "center"
+		android:minHeight = "24dp"
+		android:minWidth = "24dp"
+		android:paddingLeft = "4dp"
+		android:paddingRight = "4dp"
+		android:visibility = "gone">
+
+		<ImageView
+			android:id = "@+id/widget_actionbar_right_image_content"
+			android:layout_width = "wrap_content"
+			android:layout_height = "match_parent"
+			android:layout_centerInParent = "true"
+			android:padding = "4dp"
+			android:scaleType = "centerInside" />
+	</com.programmeryuan.PKUCarrier.materialdesign.widgets.RelativeLayout>
+
+	<LinearLayout
+		android:id = "@+id/widget_actionbar_buttons"
+		android:layout_width = "wrap_content"
+		android:layout_height = "match_parent"
+		android:layout_alignParentRight = "true"
+		android:orientation = "horizontal"
+		android:visibility = "gone" />
+    <ImageView
+            android:id="@+id/widget_actionbar_shadow"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:src="@color/divider_normal"
+            android:layout_alignParentBottom="true"
+            android:visibility="visible"/>
+</RelativeLayout>

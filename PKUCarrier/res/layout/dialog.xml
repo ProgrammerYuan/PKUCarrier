@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+	android:layout_width = "match_parent"
+	android:layout_height = "match_parent"
+	android:padding = "32dp">
+
+	<LinearLayout
+		android:id = "@+id/contentDialog"
+		android:layout_height = "wrap_content"
+		android:layout_width = "fill_parent"
+		android:background = "@drawable/dialog_background"
+		android:layout_centerInParent = "true"
+		android:orientation = "vertical">
+
+		<TextView
+			android:id = "@+id/dialog_title"
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:text = "Title"
+			android:layout_marginTop = "24dp"
+			android:layout_marginLeft = "24dp"
+			android:layout_marginRight = "24dp"
+			android:textColor = "#000"
+			android:textSize = "20sp" />
+
+		<TextView
+			android:id = "@+id/dialog_message"
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:layout_marginTop = "16dp"
+			android:text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+			android:layout_marginLeft = "24dp"
+			android:layout_marginRight = "24dp"
+			android:textSize = "14sp"
+			android:textColor = "@color/black" />
+
+		<RelativeLayout
+			android:id = "@+id/dialog_custom"
+			android:layout_gravity = "center"
+			android:layout_width = "match_parent"
+			android:layout_marginBottom = "16dp"
+			android:layout_height = "wrap_content"
+			android:visibility = "gone" />
+
+		<LinearLayout
+			android:id = "@+id/button_container"
+			android:layout_height = "48dp"
+			android:layout_width = "fill_parent"
+			android:layout_marginTop="8dp"
+			android:orientation = "horizontal"
+			android:gravity = "right">
+
+			<com.programmeryuan.PKUCarrier.materialdesign.widgets.ButtonFlat
+
+				android:id = "@+id/button_cancel"
+				android:layout_gravity = "center_vertical"
+				android:layout_width = "wrap_content"
+				android:layout_height = "36dp"
+				android:textColor = "@color/black"
+				android:text = "取消" />
+
+			<com.programmeryuan.PKUCarrier.materialdesign.widgets.ButtonFlat
+				android:id = "@+id/button_neutral"
+				android:layout_gravity = "center_vertical"
+
+				android:layout_width = "wrap_content"
+				android:layout_height = "36dp"
+				android:text = "呃"
+				android:textColor = "@color/grey"
+				android:visibility = "gone" />
+
+			<com.programmeryuan.PKUCarrier.materialdesign.widgets.ButtonFlat
+				android:id = "@+id/button_accept"
+				android:layout_gravity = "center_vertical"
+				android:layout_marginRight = "16dp"
+				android:layout_width = "wrap_content"
+				android:layout_height = "36dp"
+				android:textColor = "@color/main"
+				android:text = "确定" />
+		</LinearLayout>
+
+	</LinearLayout>
+
+
+</RelativeLayout>

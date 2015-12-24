@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android = "http://schemas.android.com/apk/res/android">
+	<item>
+		<shape android:shape = "oval">
+			<stroke
+				android:width = "2sp"
+				android:color = "@color/main_1" />
+			<solid android:color = "@color/white" />
+			<!--<size-->
+			<!--android:width = "10sp"-->
+			<!--android:height = "10sp" />-->
+		</shape>
+
+	</item>
+	<!--<item-->
+		<!--android:bottom = "4sp"-->
+		<!--android:left = "4sp"-->
+		<!--android:right = "4sp"-->
+		<!--android:top = "4sp">-->
+		<!--<shape android:shape = "oval">-->
+			<!--<solid android:color = "@color/main_1" />-->
+			<!--&lt;!&ndash;<size&ndash;&gt;-->
+			<!--&lt;!&ndash;android:width = "3sp"&ndash;&gt;-->
+			<!--&lt;!&ndash;android:height = "3sp" />&ndash;&gt;-->
+		<!--</shape>-->
+	<!--</item>-->
+
+
+</layer-list>
