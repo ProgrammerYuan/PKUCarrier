@@ -173,6 +173,7 @@ public class AddTaskActivity extends AngelActivity implements View.OnClickListen
 			public void onFailure(HttpException error, String msg, JSONObject request_param) {
 				Logger.out(msg);
 				dialog.dismiss();
+				Net.handleErrorCode(AddTaskActivity.this, error.getExceptionCode(),msg,request_param);
 			}
 
 		});
